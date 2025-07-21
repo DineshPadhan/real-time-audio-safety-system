@@ -1,0 +1,144 @@
+{
+  "name": "Audio Project Complete Protection",
+  "target": "branch",
+  "source_type": "Repository", 
+  "source": "DineshPadhan/real-time-audio-safety-system",
+  "enforcement": "active",
+  "conditions": {
+    "ref_name": {
+      "exclude": [],
+      "include": [
+        "refs/heads/main",
+        "refs/heads/master",
+        "refs/heads/develop",
+        "refs/heads/release/*"
+      ]
+    }
+  },
+  "rules": [
+    {
+      "type": "deletion",
+      "parameters": {}
+    },
+    {
+      "type": "non_fast_forward",
+      "parameters": {}
+    },
+    {
+      "type": "pull_request",
+      "parameters": {
+        "dismiss_stale_reviews_on_push": true,
+        "require_code_owner_review": false,
+        "require_last_push_approval": false,
+        "required_approving_review_count": 1,
+        "required_review_thread_resolution": true
+      }
+    },
+    {
+      "type": "required_linear_history",
+      "parameters": {}
+    },
+    {
+      "type": "commit_message_pattern",
+      "parameters": {
+        "name": "Audio Project Commit Convention",
+        "negate": false,
+        "pattern": "^(🎧|🔧|🐛|✨|📚|🎯|⚡|🛡️|🔊|🎵)(\\(.+\\))?: .{10,72}$"
+      }
+    },
+    {
+      "type": "commit_author_email_pattern",
+      "parameters": {
+        "name": "Valid Developer Email",
+        "negate": false,
+        "pattern": "^[a-zA-Z0-9._%+-]+@(gmail\\.com|outlook\\.com|yahoo\\.com|[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,})$"
+      }
+    },
+    {
+      "type": "max_file_path_length",
+      "parameters": {
+        "max_file_path_length": 255
+      }
+    },
+    {
+      "type": "max_file_size",
+      "parameters": {
+        "max_file_size": 50
+      }
+    },
+    {
+      "type": "file_path_restriction",
+      "parameters": {
+        "restricted_file_paths": [
+          "*.exe",
+          "*.msi",
+          "*.dmg",
+          "*.pkg",
+          "*.deb",
+          "*.rpm",
+          "*.dll",
+          "*.so",
+          "*.dylib",
+          "__pycache__/**",
+          "*.pyc",
+          "*.pyo",
+          ".venv/**",
+          "venv/**",
+          "env/**",
+          ".env/**",
+          "node_modules/**",
+          "*.log",
+          "*.tmp",
+          "*.temp",
+          "*.bak",
+          "*.swp",
+          "*.swo",
+          "*~",
+          ".DS_Store",
+          "Thumbs.db",
+          "desktop.ini",
+          "ffmpeg-*/**",
+          "*.wav",
+          "*.mp3",
+          "*.flac",
+          "*.aac",
+          "*.ogg",
+          "*.m4a",
+          "!song.mp3",
+          "recordings/**",
+          "test_output/**",
+          "*.raw",
+          "*.pcm"
+        ]
+      }
+    },
+    {
+      "type": "file_extension_restriction",
+      "parameters": {
+        "restricted_file_extensions": [
+          ".exe",
+          ".msi",
+          ".dmg",
+          ".pkg",
+          ".deb",
+          ".rpm",
+          ".dll",
+          ".so",
+          ".dylib",
+          ".bin",
+          ".pyc",
+          ".pyo",
+          ".class",
+          ".jar"
+        ]
+      }
+    }
+  ],
+  "bypass_actors": [
+    {
+      "actor_id": 1,
+      "actor_type": "RepositoryRole",
+      "bypass_mode": "pull_request"
+    }
+  ]
+}
