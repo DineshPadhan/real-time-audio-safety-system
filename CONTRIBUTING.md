@@ -12,8 +12,8 @@ Thank you for your interest in contributing to this project! We welcome contribu
 ### Development Setup
 ```bash
 # Fork and clone the repository
-git clone https://github.com/yourusername/noise-cancellation-system.git
-cd noise-cancellation-system
+git clone https://github.com/DineshPadhan/real-time-audio-safety-system.git
+cd real-time-audio-safety-system
 
 # Create virtual environment
 python -m venv .venv

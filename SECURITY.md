@@ -17,7 +17,7 @@ We take security vulnerabilities seriously. If you discover a security vulnerabi
 
 **DO NOT** open a public issue for security vulnerabilities. Instead:
 
-1. **Email**: Send details to [your-email@domain.com]
+1. **Email**: Send details to dineshpadhan17@gmail.com
 2. **Include**: 
    - Description of the vulnerability
    - Steps to reproduce

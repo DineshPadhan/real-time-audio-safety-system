@@ -207,7 +207,7 @@ A sophisticated real-time audio processing system designed for hearing protectio
 ### ⚡ **Quick Start**
 ```bash
 # Clone the repository
-git clone https://github.com/dineshpadhan17/real-time-audio-safety-system.git
+git clone https://github.com/DineshPadhan/real-time-audio-safety-system.git
 cd real-time-audio-safety-system
 
 # Set up virtual environment
@@ -354,7 +354,7 @@ python simple_pc_to_headphone.py --test-mode
 ### 🔄 **Development Workflow**
 ```bash
 # Fork the repository and clone
-git clone https://github.com/dineshpadhan17/real-time-audio-safety-system.git
+git clone https://github.com/DineshPadhan/real-time-audio-safety-system.git
 
 # Create feature branch
 git checkout -b feature/new-algorithm
@@ -395,8 +395,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Open Source Audio Community**: For inspiration and technical guidance
 
 ### 📧 **Contact & Support**
-- **Issues**: [GitHub Issues](https://github.com/dineshpadhan17/real-time-audio-safety-system/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/dineshpadhan17/real-time-audio-safety-system/discussions)
+- **Issues**: [GitHub Issues](https://github.com/DineshPadhan/real-time-audio-safety-system/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/DineshPadhan/real-time-audio-safety-system/discussions)
 - **Email**: dineshpadhan17@gmail.com
 
 ---
